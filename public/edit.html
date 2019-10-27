@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet">
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+            
+        <title>Boilerplate</title>
+    </head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="heading-primary heading-primary--flex">Progress Tracker</h1> 
+            <svg class="header__icon">
+                <use xlink:href="img/sprite.svg#icon-trophy"></use>
+            </svg>       
+            <button id="remove" class="btn">Remove tracker</button>
+        </header>
+        <div class="content">
+            <nav class="sidenav">
+                <ul class="list">
+                    <a href="index.html#" class="list__item list__item--active">
+                        <li class="list__text">ProgressTracker</li>
+                    </a>
+                    <a href="index.html#Courses" class="list__item">
+                        <li class="list__text">Courses</li>
+                    </a>
+                    <a href="index.html#Projects" class="list__item">
+                        <li class="list__text">Projects</li>
+                    </a>
+                    <a href="index.html#Others" class="list__item">
+                        <li class="list__text">Others</li>
+                    </a>
+                    <a href="index.html#Completed" class="list__item">
+                        <li class="list__text">Completed</li>
+                    </a>
+                </ul>
+
+                <div class="list__footer">
+                    <p>Tomasz Wirkus 2019 </p> 
+                    <p>&copy; All Rights Reserved</p> 
+                </div>
+            </nav>
+            <main class="main main--edit">
+                <div class="main__content" id="content">
+                </div>
+                <div class="main__progress" id="progress-content">
+                    <!--
+                    <span class="font-11">Leave a note, to keep in mind what you have learned</span>
+                    <textarea id="progress-note" class="form__textarea margin-bottom" cols="30" rows="7"></textarea>
+                    <button id="progress-add" class="btn">Add progress</button>
+                    -->
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="./scripts/edit-bundle.js"></script>
+</body>
+</html>

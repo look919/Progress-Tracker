@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+ 
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet">    
+        <link rel="stylesheet" href="css/style.css">
+            
+        <title>ProgressTracker</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <header class="header">
+                <h1 class="heading-primary heading-primary--flex">Progress Tracker</h1> 
+                <svg class="header__icon">
+                    <use xlink:href="img/sprite.svg#icon-trophy"></use>
+                </svg>       
+                <a href='#popup' class="btn">Create new Tracker</a>
+            </header>
+            <div class="content">
+                <nav class="sidenav">
+                    <ul class="list">
+                        <a href="index.html#" class="list__item list__item--active">
+                            <li class="list__text">ProgressTracker</li>
+                        </a>
+                        <a href="index.html#Courses" class="list__item">
+                            <li class="list__text">Courses</li>
+                        </a>
+                        <a href="index.html#Projects" class="list__item">
+                            <li class="list__text">Projects</li>
+                        </a>
+                        <a href="index.html#Others" class="list__item">
+                            <li class="list__text">Others</li>
+                        </a>
+                        <a href="index.html#Completed" class="list__item">
+                            <li class="list__text">Completed</li>
+                        </a>
+                    </ul>
+
+                    <div class="list__footer">
+                        <p>Tomasz Wirkus 2019 </p> 
+                        <p>&copy; All Rights Reserved</p> 
+                    </div>
+                </nav>
+                <main class="main " id="content">
+                    
+                    <!--<h2 class="heading-secondary">Welcome</h2>
+                    
+                    <h3 class="heading-tertiary color-black">
+                        ProgressTracker is a simple applications 
+                        that helps you keeping records of your learning achievments,
+                        feel free to use.
+                    </h3>-->
+
+
+                    
+                </main>
+            </div>
+        </div>
+        
+
+        <div class="popup" id="popup">
+            <div class="popup__background">
+                <div class="popup__content">
+                    <form action="#" class="form">
+                        <h3 class="heading-tertiary margin-top margin-bottom">Create tracker</h3>
+                        <a href="#tom" class="popup__close">&times;</a>
+                        <div class="form__el" id="create-category">
+                            <label class="form__radio"><input id="create-course" type="radio" name="radioCategory" checked> Course</label>
+                            <label class="form__radio"><input id="create-project" type="radio" name="radioCategory"> Project</label>
+                            <label class="form__radio"><input id="create-other" type="radio" name="radioCategory"> Other</label>
+                        </div>
+                        <div class="form__el">
+                            <input type="text" id="create-trackerName"class="form__input form__input--text" placeholder="Tracker name" autocomplete="off" reqiured>
+                        </div>
+                        <div class="form__el">
+                            Current Progress:
+                            <input type="number" id="create-trackerProgress" class="form__input form__input--num" value=0 min=0 max=100 step="5" autocomplete="off">
+                        </div>
+                        <div class="form__el">
+                            <div>Note:</div> 
+                            <textarea id="create-trackerNote" class="form__textarea form__textarea--small" cols="30" rows="7"></textarea> 
+                        </div>
+                        <div class="form__el">
+                            <button id="createTracker" class="btn btn--small">Submit</button>
+                        </div>					
+                    </form>
+                    
+                </div>
+            </div>		
+        </div>
+
+        <script src="./scripts/index-bundle.js"></script>
+    </body>
+</html>

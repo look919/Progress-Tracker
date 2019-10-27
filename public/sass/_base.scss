@@ -1,0 +1,130 @@
+$color-primary-1: #4278f5;
+$color-primary-2: #093394;
+
+$color-grey-light-1: #f4f2f2;
+$color-grey-light-2: #f0eeee;
+$color-grey-light-3: #ccc;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+$color-white: #dddeee;
+$color-black: #000000;
+$color-gold:  #ffd700;
+$color-background-1: #1e3799;
+$color-background-2: #0c2461;
+
+$bp-height-big: 53.125em;       //max-height: 850
+$bp-height-medium: 40.625em;    //max-height: 650
+$bp-height-small: 31.25em;      //max-height 500
+$bp-height-smallest: 28.125em;   //max-height:425
+
+$bp-largest: 87.5em;            //1400 width
+$bp-large: 56.25em;             //900
+$bp-medium: 43.75em;            //700
+$bp-small: 34.375em;            //550
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $bp-medium){
+        font-size: 35%;
+    }
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right bottom, $color-background-1, $color-background-2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    min-height: 100vh;
+
+
+}
+.heading-primary{
+    font-size: 5rem;
+    font-weight: 600;
+    margin-left: 3rem;
+
+    &--flex{
+        display: flex;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $color-primary-2;
+    margin-bottom: 6rem;
+
+    @media only screen and (max-width: $bp-medium){
+        margin-bottom: 3rem;
+    }
+}
+
+.heading-tertiary{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: $color-gold;
+    margin-bottom: 1.5rem;
+
+    @media only screen and (max-height: $bp-height-big){
+        margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+    }
+    
+
+    @media only screen and (max-height: $bp-height-medium){
+        margin-bottom: 1rem !important;
+        margin-top: 1rem !important;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        font-size: 2rem;
+        margin-bottom: 1rem !important;
+    }
+
+    
+
+}
+
+.color-black{
+    color: $color-black !important;
+}
+.margin-bottom{
+    margin-bottom: 4rem;
+}
+.margin-top{
+    margin-top: 4rem;
+}
+.font-11{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+::selection {
+    background-color: $color-primary-2;
+    color: $color-white;
+}
